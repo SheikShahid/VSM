@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="VSMModelStoreContainer" CdmEntityContainer="VSMEntities">
+    <EntitySetMapping Name="BillInfoes">
+      <EntityTypeMapping TypeName="VSMModel.BillInfo">
+        <MappingFragment StoreEntitySet="BillInfo">
+          <ScalarProperty Name="BillId" ColumnName="BillId" />
+          <ScalarProperty Name="ServiceRef" ColumnName="ServiceRef" />
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Qty" ColumnName="Qty" />
+          <ScalarProperty Name="ItemAmount" ColumnName="ItemAmount" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CustomerMasters">
+      <EntityTypeMapping TypeName="VSMModel.CustomerMaster">
+        <MappingFragment StoreEntitySet="CustomerMaster">
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ItemsInfoes">
+      <EntityTypeMapping TypeName="VSMModel.ItemsInfo">
+        <MappingFragment StoreEntitySet="ItemsInfo">
+          <ScalarProperty Name="ItemId" ColumnName="ItemId" />
+          <ScalarProperty Name="ItemName" ColumnName="ItemName" />
+          <ScalarProperty Name="Mrp" ColumnName="Mrp" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceRecordInfoes">
+      <EntityTypeMapping TypeName="VSMModel.ServiceRecordInfo">
+        <MappingFragment StoreEntitySet="ServiceRecordInfo">
+          <ScalarProperty Name="ServiceRefNo" ColumnName="ServiceRefNo" />
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+          <ScalarProperty Name="ModalNo" ColumnName="ModalNo" />
+          <ScalarProperty Name="ServiceDate" ColumnName="ServiceDate" />
+          <ScalarProperty Name="NextServiceDate" ColumnName="NextServiceDate" />
+          <ScalarProperty Name="ServiceRepId" ColumnName="ServiceRepId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ServiceRepInfoes">
+      <EntityTypeMapping TypeName="VSMModel.ServiceRepInfo">
+        <MappingFragment StoreEntitySet="ServiceRepInfo">
+          <ScalarProperty Name="ServiceRepId" ColumnName="ServiceRepId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="ContactNo" ColumnName="ContactNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VehicleMasters">
+      <EntityTypeMapping TypeName="VSMModel.VehicleMaster">
+        <MappingFragment StoreEntitySet="VehicleMaster">
+          <ScalarProperty Name="ModalNo" ColumnName="ModalNo" />
+          <ScalarProperty Name="ModalName" ColumnName="ModalName" />
+          <ScalarProperty Name="ModalYear" ColumnName="ModalYear" />
+          <ScalarProperty Name="VehicleType" ColumnName="VehicleType" />
+          <ScalarProperty Name="SoldDate" ColumnName="SoldDate" />
+          <ScalarProperty Name="ServiceSchedule" ColumnName="ServiceSchedule" />
+          <ScalarProperty Name="CustId" ColumnName="CustId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
